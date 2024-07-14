@@ -18,6 +18,7 @@ public class ThirdPersonAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         animator.SetFloat("speed", rb.velocity.magnitude / maxSpeed);
     }
 }

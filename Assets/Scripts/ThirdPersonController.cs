@@ -100,7 +100,6 @@ public class ThirdPersonController : MonoBehaviour
 
     private bool IsGrounded()
     {
-        print("ISGROUNDED");
         Ray ray = new Ray(this.transform.position + Vector3.up * 0.25f, Vector3.down);
         if (Physics.Raycast(ray, out RaycastHit hit, 0.3f))
             return true;
